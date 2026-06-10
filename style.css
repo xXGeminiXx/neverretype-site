@@ -1,0 +1,62 @@
+:root {
+  --accent: #6366f1;
+  --accent-2: #4f46e5;
+  --bg: #0b0d12;
+  --surface: #141821;
+  --text: #e7e9ee;
+  --muted: #9aa3b2;
+  --border: #232836;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  max-width: 1040px; margin: 0 auto; padding: 20px 24px;
+}
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; }
+.brand .logo { border-radius: 8px; }
+.links a { color: var(--muted); margin-left: 22px; font-size: 14px; }
+.links a:hover { color: var(--text); text-decoration: none; }
+
+main { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+.hero { text-align: center; padding: 72px 0 56px; }
+.hero h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.1; margin: 0 0 18px; letter-spacing: -1px; }
+.lede { font-size: 19px; color: var(--muted); max-width: 660px; margin: 0 auto 28px; }
+.lede strong { color: var(--text); }
+.cta {
+  display: inline-block; background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  color: #fff; font-weight: 700; padding: 14px 28px; border-radius: 12px; font-size: 16px;
+  box-shadow: 0 8px 24px rgba(79,70,229,0.35);
+}
+.cta:hover { text-decoration: none; filter: brightness(1.07); }
+.micro { color: var(--muted); font-size: 13px; margin-top: 14px; }
+
+.features {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px; padding: 24px 0 56px;
+}
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 22px; }
+.card h3 { margin: 0 0 8px; font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+.band { text-align: center; padding: 56px 0; border-top: 1px solid var(--border); }
+.band.alt { border-top: 1px solid var(--border); }
+.band h2 { font-size: 28px; margin: 0 0 12px; }
+.band p { color: var(--muted); max-width: 640px; margin: 0 auto; }
+
+footer {
+  display: flex; align-items: center; justify-content: space-between;
+  max-width: 1040px; margin: 0 auto; padding: 28px 24px; color: var(--muted);
+  font-size: 14px; border-top: 1px solid var(--border);
+}
