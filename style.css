@@ -23,8 +23,8 @@ a:hover { text-decoration: underline; }
   display: flex; align-items: center; justify-content: space-between;
   max-width: 1040px; margin: 0 auto; padding: 20px 24px;
 }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; }
-.brand .logo { border-radius: 8px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 21px; }
+.brand .logo { border-radius: 8px; width: 34px; height: 34px; }
 .links a { color: var(--muted); margin-left: 22px; font-size: 14px; }
 .links a:hover { color: var(--text); text-decoration: none; }
 
@@ -60,3 +60,6 @@ footer {
   max-width: 1040px; margin: 0 auto; padding: 28px 24px; color: var(--muted);
   font-size: 14px; border-top: 1px solid var(--border);
 }
+
+.trust-row { color: var(--muted); font-size: 13px; letter-spacing: 0.2px; margin-top: 10px; }
+.hero-shot { width: 100%; max-width: 880px; margin-top: 28px; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 12px 40px rgba(0,0,0,0.45); }
