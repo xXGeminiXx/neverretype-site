@@ -7,17 +7,25 @@
   <meta name="description" content="Fill and sign PDF forms in your browser and save your answers as reusable profiles - never retype a form. 100% local, no account, no upload." />
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#f4efe2" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://xxgeminixx.github.io/neverretype-site/" />
 
   <!-- open graph / social -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NeverRetype" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="NeverRetype - PDF Form Filler &amp; Signer (100% Local)" />
   <meta property="og:description" content="Fill a PDF form once, save your answers, and never retype it again. Fill and sign entirely in your browser - your document never leaves your computer." />
   <meta property="og:url" content="https://xxgeminixx.github.io/neverretype-site/" />
   <meta property="og:image" content="https://xxgeminixx.github.io/neverretype-site/hero-v100.png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image:alt" content="The NeverRetype editor filling a PDF form locally in the browser" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="NeverRetype - PDF Form Filler &amp; Signer (100% Local)" />
   <meta name="twitter:description" content="Fill a PDF form once, save your answers, and never retype it again. 100% local - your document never leaves your computer." />
   <meta name="twitter:image" content="https://xxgeminixx.github.io/neverretype-site/hero-v100.png" />
+  <meta name="twitter:image:alt" content="The NeverRetype editor filling a PDF form locally in the browser" />
 
   <link rel="icon" type="image/png" href="icon.png" />
   <link rel="apple-touch-icon" href="icon.png" />
@@ -25,7 +33,90 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "NeverRetype",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome, Edge, Brave, and other Chromium browsers",
+    "description": "Fill and sign PDF forms in your browser and save your answers as reusable profiles so you never retype a form. 100% local - your document never leaves your computer. No account, no upload, no tracking.",
+    "url": "https://xxgeminixx.github.io/neverretype-site/",
+    "image": "https://xxgeminixx.github.io/neverretype-site/hero-v100.png",
+    "browserRequirements": "Requires a Chromium-based browser (Chrome, Edge, or Brave)",
+    "offers": {
+      "@type": "Offer",
+      "price": "19.00",
+      "priceCurrency": "USD",
+      "description": "30-day free trial, then a one-time $19 license. Basic form filling stays free forever."
+    },
+    "featureList": [
+      "Fill fillable PDF forms with a live page preview",
+      "Save reusable answer profiles and smart-refill matching fields across forms",
+      "Type or draw a signature and place it on detected signature lines",
+      "Unlock owner-protected government forms locally",
+      "Place typed text anywhere on flat or scanned PDFs"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is my data really private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. PDFs you open are read, filled and saved entirely in your browser on your computer. There is no server, no upload, and no analytics. The extension's only permission is local storage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. There is no sign-up and no login. You open a PDF and start filling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens after the 30-day trial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Basic form filling stays free forever. Saved profiles, smart refill, import and export, and advanced signing need a one-time $19 license. Your saved data is never deleted or held hostage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kinds of PDFs work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard fillable PDF forms (the AcroForm kind) get the full experience. Flat or scanned pages can still be signed, and you can place typed text anywhere on them. Owner-protected government forms are unlocked on your device. Password-locked and XFA files get a clear explanation instead of a broken download."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which browsers does it support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chrome and other Chromium browsers - Edge, Brave, and similar - installed from the Chrome Web Store."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it a subscription?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. It is one $19 payment, ever. Restore purchase brings your license back on any machine you use."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -362,6 +453,6 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2" defer></script>
 </body>
 </html>
