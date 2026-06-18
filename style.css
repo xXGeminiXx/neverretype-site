@@ -11,7 +11,7 @@
   --paper-3:    #efe8d7;   /* sunk panels / alt bands */
   --ink:        #1d1b16;   /* warm near-black */
   --ink-2:      #57513f;   /* muted body */
-  --ink-3:      #8c8466;   /* faint captions */
+  --ink-3:      #6e6448;   /* faint captions - darkened for AA contrast */
   --line:       #d9cfb8;   /* ruled lines, borders */
   --line-2:     #c8bda1;   /* stronger rule */
 

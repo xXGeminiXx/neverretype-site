@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xxgeminixx.github.io/neverretype-site/sitemap.xml
