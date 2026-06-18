@@ -5,88 +5,363 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NeverRetype - PDF Form Filler &amp; Signer (100% Local)</title>
   <meta name="description" content="Fill and sign PDF forms in your browser and save your answers as reusable profiles - never retype a form. 100% local, no account, no upload." />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#f4efe2" />
+
+  <!-- open graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NeverRetype - PDF Form Filler &amp; Signer (100% Local)" />
+  <meta property="og:description" content="Fill a PDF form once, save your answers, and never retype it again. Fill and sign entirely in your browser - your document never leaves your computer." />
+  <meta property="og:url" content="https://xxgeminixx.github.io/neverretype-site/" />
+  <meta property="og:image" content="https://xxgeminixx.github.io/neverretype-site/hero-v100.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NeverRetype - PDF Form Filler &amp; Signer (100% Local)" />
+  <meta name="twitter:description" content="Fill a PDF form once, save your answers, and never retype it again. 100% local - your document never leaves your computer." />
+  <meta name="twitter:image" content="https://xxgeminixx.github.io/neverretype-site/hero-v100.png" />
+
   <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="brand">
-      <img class="logo" src="icon.png" width="28" height="28" alt="" />
-      <span>NeverRetype</span>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="top">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="NeverRetype home">
+        <img class="mark" src="icon.png" width="30" height="30" alt="" />
+        <span>NeverRetype</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a class="nav-cta" href="https://chromewebstore.google.com/detail/adfhmodfgeljmcgfhnmjfncbcdfagmcd" data-store-link>Add to Chrome</a>
+      </nav>
     </div>
-    <nav class="links">
-      <a href="#features">Features</a>
-      <a href="#privacy">Privacy</a>
-      <a href="#support">Support</a>
-    </nav>
   </header>
 
   <main>
+
+    <!-- ===================== HERO ===================== -->
     <section class="hero">
-      <h1>Fill a PDF form once. Never retype it again.</h1>
-      <p class="lede">Open any fillable PDF, see the real pages, fill and sign, then download. Save your answers once and NeverRetype offers matching answers on the next form - even when the field names are different. <strong>100% local</strong>: your PDF never leaves your computer.</p>
-      <a class="cta" href="https://chromewebstore.google.com/detail/adfhmodfgeljmcgfhnmjfncbcdfagmcd" data-store-link>Add to Chrome</a>
-      <p class="micro">Free for 30 days. Everything unlocked. After that, keep profiles, smart refill, and advanced signing for $19 once. Basic filling stays free forever.</p>
-      <p class="trust-row">No upload &middot; No account &middot; No subscription &middot; Local profiles &middot; Works with real fillable PDFs</p>
-      <img class="hero-shot" src="hero-v100.png" alt="The NeverRetype editor with a W-9 open: answers typed on the left, the Social Security Number field highlighted on the live page preview, profiles and signature panels on the right" loading="lazy" />
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">PDF form filler + signer / 100% local</p>
+            <h1>Fill a PDF form <span class="u">once<svg viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 30 2, 90 2, 118 7"/></svg></span>.<br/>Never retype it again.</h1>
+            <p class="lede">Open any fillable PDF, see the real pages, fill and sign, then download. Save your answers once and NeverRetype offers them on the next form - even when the field names are different. <strong>Your PDF never leaves your computer.</strong></p>
+            <div class="hero-actions">
+              <a class="btn" href="https://chromewebstore.google.com/detail/adfhmodfgeljmcgfhnmjfncbcdfagmcd" data-store-link>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                Add to Chrome
+              </a>
+              <a class="btn ghost" href="#how">See how it works</a>
+            </div>
+            <p class="price-line"><b>Free for 30 days</b>, everything unlocked. Then $19 once - basic filling stays free forever.</p>
+            <p class="trust-row">
+              <span>No upload</span><span>No account</span><span>No subscription</span><span>Local profiles</span><span>Real fillable PDFs</span>
+            </p>
+          </div>
+
+          <div class="hero-side reveal d2">
+            <div class="sig-card">
+              <span class="sig-stamp">FILLED</span>
+              <div class="form-row">
+                <span class="flabel">Full name</span>
+                <div class="fbox filled"><span class="typed">Jordan A. Maxwell</span></div>
+              </div>
+              <div class="form-row">
+                <span class="flabel">Date</span>
+                <div class="fbox filled"><span class="typed t2 js-date">2026-06-17</span></div>
+              </div>
+              <div class="sig-line">
+                <span class="flabel">Signature</span>
+                <div class="rule">
+                  <span class="x">&times;</span>
+                  <svg viewBox="0 0 240 70" aria-hidden="true">
+                    <path pathLength="1" d="M6 46 C 16 16, 30 14, 32 42 C 33 58, 23 58, 27 44 C 33 24, 46 20, 52 44 C 56 60, 68 56, 72 40 C 76 22, 88 22, 92 44 C 95 58, 106 58, 116 44 C 126 30, 120 16, 132 18 C 143 20, 140 48, 154 48 C 170 48, 182 30, 196 26 C 206 23, 214 28, 222 24"/>
+                    <path pathLength="1" class="flourish" d="M14 58 C 78 70, 158 68, 226 54"/>
+                  </svg>
+                </div>
+                <p class="cap">Signature line found and signed on this device</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-shot-wrap reveal d3">
+          <div class="paper-frame">
+            <img src="hero-v100.png" alt="The NeverRetype editor with a W-9 open: answers typed on the left, the Social Security Number field highlighted on the live page preview, profiles and signature panels on the right" loading="lazy" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="features" class="features">
-      <div class="card">
-        <h3>See what you fill</h3>
-        <p>A full page preview, not a blind list of field names. Click any field name and NeverRetype highlights exactly where it sits on the page.</p>
-      </div>
-      <div class="card">
-        <h3>Smart reusable profiles</h3>
-        <p>Save a profile once - "Personal", "My Business" - then fill any form's matching fields in one click. First Name, first_name, and FName all count as the same field.</p>
-      </div>
-      <div class="card">
-        <h3>Sign it your way</h3>
-        <p>Draw your signature or just type your name. Remember it on this device, then stamp it exactly where you click on the page - or pick a page and corner.</p>
-      </div>
-      <div class="card">
-        <h3>Private by design</h3>
-        <p>Taxes, leases, medical forms - that is sensitive paperwork. NeverRetype opens, fills, and saves your PDF entirely on your device. No account, no cloud, no tracking.</p>
-      </div>
-      <div class="card">
-        <h3>Handles real PDF weirdness</h3>
-        <p>Existing answers stay put unless you change them. Owner-protected government forms (SSA, USCIS, many court forms) are unlocked right on your device and filled like any other. No fields at all? Type text exactly where you click. XFA and password-locked files get clear explanations instead of broken downloads.</p>
-      </div>
-      <div class="card">
-        <h3>Pay once, if you stay</h3>
-        <p>Try everything free for 30 days. One $19 purchase keeps profiles, import/export, and signing forever - and "Restore purchase" brings it back on any machine. You never pay twice, and your data is never held hostage.</p>
-        <p class="micro">Free trial for evaluation. Continued business or commercial use requires the one-time license.</p>
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="band" id="how">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps. No account, no upload.</h2>
+        </div>
+        <div class="steps reveal d1">
+          <div class="step">
+            <div class="num">01</div>
+            <p class="tag">Open</p>
+            <h3>Open any PDF</h3>
+            <p>Drop in a tax form, a lease, an application. NeverRetype shows the real pages, not a blind list of cryptic field names.</p>
+          </div>
+          <div class="step">
+            <div class="num">02</div>
+            <p class="tag">Fill + sign</p>
+            <h3>Fill and sign</h3>
+            <p>Type once, or let saved answers fill every matching field. Draw or type your signature and drop it exactly where it belongs.</p>
+          </div>
+          <div class="step">
+            <div class="num">03</div>
+            <p class="tag">Download</p>
+            <h3>Download</h3>
+            <p>Save the finished PDF straight to your computer. Nothing was uploaded, and no copy was kept anywhere.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="shots" aria-label="Screenshots">
-      <figure>
-        <img src="shot-refill-v100.png" alt="A court form just opened in NeverRetype, with a bar offering: 70 fields match answers you've used before - Fill them" loading="lazy" />
-        <figcaption>Open the next form and your answers are already waiting - one click fills every matching field, you review, you download.</figcaption>
-      </figure>
-      <figure>
-        <img src="shot-signature-v100.png" alt="A government form with no signature field: NeverRetype found the printed signature line on page 3 and placed a typed signature on it" loading="lazy" />
-        <figcaption>No signature field on the form? NeverRetype finds the printed signature line and stamps yours right on it.</figcaption>
-      </figure>
+    <!-- ===================== COMPARISON ===================== -->
+    <section class="band sunk">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Local by design</p>
+          <h2>Most PDF tools want your file on their server. This one doesn't.</h2>
+          <p>Taxes, leases, medical and legal forms - that is some of the most sensitive paper you own. NeverRetype opens, fills, and saves it entirely on your device.</p>
+        </div>
+        <div class="compare reveal d1">
+          <div class="col them">
+            <h3>Typical cloud PDF tool</h3>
+            <ul>
+              <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg> Uploads your document to their servers</li>
+              <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg> Pushes you into an account before you can download</li>
+              <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg> Locks your own file behind a monthly subscription</li>
+              <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg> Your private data leaves your control</li>
+            </ul>
+          </div>
+          <div class="col us">
+            <h3>NeverRetype</h3>
+            <ul>
+              <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> Fills and saves entirely on your device</li>
+              <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> No account, no login, ever</li>
+              <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> One-time price, basic filling free forever</li>
+              <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> Your document never leaves your computer</li>
+            </ul>
+          </div>
+        </div>
+        <p class="micro reveal d2" style="text-align:center;margin-top:26px;">No analytics. No telemetry. No tracking. The extension's only permission is local storage. &nbsp;<a href="privacy-policy.html">Read the full privacy policy &rarr;</a></p>
+      </div>
     </section>
 
-    <section id="privacy" class="band">
-      <h2>Your PDF never leaves your computer</h2>
-      <p>Many PDF filler tools upload your document to a server or push you into an account before you can download your own file. NeverRetype does neither, on purpose. No upload, no account, no analytics, no telemetry. Read the full <a href="privacy-policy.html">privacy policy</a>.</p>
-      <p class="micro">Built with SOC2 and GDPR principles in mind - everything stays on your machine, nothing is collected, there is no vendor data flow to review.</p>
-      <p class="micro">NeverRetype works with fillable PDF forms (the standard AcroForm kind). Flat or scanned pages can still be signed - and you can place typed text anywhere on them.</p>
+    <!-- ===================== FEATURES ===================== -->
+    <section class="band" id="features">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Features</p>
+          <h2>Built for the forms you fill again and again.</h2>
+          <p>Tax packets, client intake, HR paperwork, court and government forms - the same fields, over and over. NeverRetype remembers them so you don't.</p>
+        </div>
+        <div class="features">
+          <div class="feat reveal">
+            <span class="fid">Field 01</span>
+            <svg class="ficon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            <h3>See what you fill</h3>
+            <p>A full page preview, not a list of cryptic field names. Click any field and NeverRetype highlights exactly where it sits on the page.</p>
+          </div>
+          <div class="feat reveal d1">
+            <span class="fid">Field 02</span>
+            <svg class="ficon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M4 16V5a1 1 0 0 1 1-1h11"/></svg>
+            <h3>Smart reusable profiles</h3>
+            <p>Save a profile once - Personal, My Business - then fill every matching field on the next form in one click. First Name, first_name and FName all count as the same field.</p>
+          </div>
+          <div class="feat reveal d2">
+            <span class="fid">Field 03</span>
+            <svg class="ficon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/><path d="M14 6l3 3"/></svg>
+            <h3>Sign it your way</h3>
+            <p>Draw your signature or type your name. Remember it on this device, then stamp it exactly where you click - or pick a page and corner.</p>
+          </div>
+          <div class="feat reveal">
+            <span class="fid">Field 04</span>
+            <svg class="ficon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16c3-4 6 2 9-2s5-3 9-1"/><path d="M3 20h18"/></svg>
+            <h3>Finds the signature line</h3>
+            <p>No signature field on the form? NeverRetype locates the printed signature line and places your signature right on it.</p>
+          </div>
+          <div class="feat reveal d1">
+            <span class="fid">Field 05</span>
+            <svg class="ficon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.6-1.8"/></svg>
+            <h3>Unlocks protected forms</h3>
+            <p>Owner-protected government forms - SSA, USCIS, many court forms - are unlocked right on your device and filled like any other. No password needed.</p>
+          </div>
+          <div class="feat reveal d2">
+            <span class="fid">Field 06</span>
+            <svg class="ficon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8M12 9v7"/></svg>
+            <h3>Place text anywhere</h3>
+            <p>Flat or scanned page with no fields at all? Type text exactly where you click, then download a clean, filled copy.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="support" class="band alt">
-      <h2>Support</h2>
-      <p>Questions, bugs, or feature requests? Email <a href="mailto:xxgeminixx+neverretype@gmail.com">xxgeminixx+neverretype@gmail.com</a> and I'll get back to you.</p>
-      <p class="micro">Enjoying NeverRetype? You can <a href="https://www.paypal.com/ncp/payment/LQTX2SFXWLAP6" target="_blank" rel="noopener">buy me a coffee</a>.</p>
+    <!-- ===================== SCREENSHOTS ===================== -->
+    <section class="band sunk">
+      <div class="wrap">
+        <div class="showcase">
+          <div class="show-row reveal">
+            <div class="show-text">
+              <p class="eyebrow">One click</p>
+              <h3>Your answers are already waiting.</h3>
+              <p>Open the next form and NeverRetype offers every field it recognizes from what you have filled before. Review, adjust, and download - the busywork is gone.</p>
+            </div>
+            <figure class="show-figure">
+              <div class="paper-frame">
+                <img src="shot-refill-v100.png" alt="A court form just opened in NeverRetype, with a bar offering: 70 fields match answers you've used before - Fill them" loading="lazy" />
+              </div>
+              <figcaption>70 fields matched from a saved profile, filled in one click.</figcaption>
+            </figure>
+          </div>
+
+          <div class="show-row flip reveal">
+            <div class="show-text">
+              <p class="eyebrow">Signatures</p>
+              <h3>Sign forms that have no signature field.</h3>
+              <p>NeverRetype reads the page, finds the printed signature line, and places your signature on it - typed or drawn, exactly where it belongs.</p>
+            </div>
+            <figure class="show-figure">
+              <div class="paper-frame">
+                <img src="shot-signature-v100.png" alt="A government form with no signature field: NeverRetype found the printed signature line on page 3 and placed a typed signature on it" loading="lazy" />
+              </div>
+              <figcaption>Printed signature line detected on page 3.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section class="band" id="pricing">
+      <div class="wrap">
+        <div class="price-wrap">
+          <div class="price-notes reveal">
+            <p class="eyebrow">Pricing</p>
+            <h2>Pay once, if you stay.</h2>
+            <p>Try everything free for 30 days - no card, nothing locked. After that, one $19 purchase keeps profiles, smart refill, import and export, and advanced signing forever.</p>
+            <p>Restore purchase brings your license back on any machine. You never pay twice, and your data is never held hostage - your profiles and signature stay on your device whether you buy or not.</p>
+            <p class="free-tag">+ Basic form filling stays free, forever.</p>
+          </div>
+
+          <div class="receipt reveal d2">
+            <span class="paid-stamp">PAID ONCE</span>
+            <div class="r-head">
+              <p class="r-title">NeverRetype Pro</p>
+              <div class="r-amount">
+                <span class="cur">$</span><span class="big">19</span><span class="r-once">once</span>
+              </div>
+              <p class="r-sub">one-time license - not a subscription</p>
+            </div>
+            <ul class="r-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> Unlimited answer profiles</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> Smart refill across forms</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> Import and export profiles</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> Advanced and remembered signing</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> Restore on every machine you use</li>
+            </ul>
+            <div class="r-foot">
+              <a class="btn" href="https://chromewebstore.google.com/detail/adfhmodfgeljmcgfhnmjfncbcdfagmcd" data-store-link>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                Add to Chrome
+              </a>
+              <p class="micro" style="margin-top:14px;">Free trial for evaluation. Continued business or commercial use requires the one-time license.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="band sunk">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Questions</p>
+          <h2>Good questions, straight answers.</h2>
+        </div>
+        <div class="faq reveal d1">
+          <details>
+            <summary>Is my data really private?</summary>
+            <p class="ans">Yes. PDFs you open are read, filled and saved entirely in your browser on your computer. There is no server, no upload, and no analytics. The extension's only permission is local storage.</p>
+          </details>
+          <details>
+            <summary>Do I need an account?</summary>
+            <p class="ans">No. There is no sign-up and no login. You open a PDF and start filling.</p>
+          </details>
+          <details>
+            <summary>What happens after the 30-day trial?</summary>
+            <p class="ans">Basic form filling stays free forever. Saved profiles, smart refill, import and export, and advanced signing need a one-time $19 license. Your saved data is never deleted or held hostage.</p>
+          </details>
+          <details>
+            <summary>What kinds of PDFs work?</summary>
+            <p class="ans">Standard fillable PDF forms (the AcroForm kind) get the full experience. Flat or scanned pages can still be signed, and you can place typed text anywhere on them. Owner-protected government forms are unlocked on your device. Password-locked and XFA files get a clear explanation instead of a broken download.</p>
+          </details>
+          <details>
+            <summary>Which browsers does it support?</summary>
+            <p class="ans">Chrome and other Chromium browsers - Edge, Brave, and similar - installed from the Chrome Web Store.</p>
+          </details>
+          <details>
+            <summary>Is it a subscription?</summary>
+            <p class="ans">No. It is one $19 payment, ever. Restore purchase brings your license back on any machine you use.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="band ink final">
+      <div class="wrap">
+        <div class="reveal">
+          <h2>Never retype a form again.</h2>
+          <p>Fill it once, save your answers, and let the next form fill itself - all on your own computer.</p>
+          <a class="btn" href="https://chromewebstore.google.com/detail/adfhmodfgeljmcgfhnmjfncbcdfagmcd" data-store-link>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            Add to Chrome
+          </a>
+          <p class="micro">Free for 30 days - no account, no card, nothing leaves your device.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <span>NeverRetype - PDF Form Filler &amp; Signer (100% Local)</span>
-    <a href="privacy-policy.html">Privacy</a>
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="support">
+    <div class="wrap">
+      <div>
+        <div class="f-brand">
+          <img class="mark" src="icon.png" width="26" height="26" alt="" />
+          <span>NeverRetype</span>
+        </div>
+        <p class="f-tag">PDF form filler and signer. 100% local. Built privacy-first - your documents and your answers stay on your device.</p>
+        <p class="f-coffee">Enjoying it? You can <a href="https://www.paypal.com/ncp/payment/LQTX2SFXWLAP6" target="_blank" rel="noopener">buy me a coffee</a>.</p>
+      </div>
+      <nav class="f-links" aria-label="Footer">
+        <a href="https://chromewebstore.google.com/detail/adfhmodfgeljmcgfhnmjfncbcdfagmcd" data-store-link>Add to Chrome</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="privacy-policy.html">Privacy policy</a>
+        <a href="mailto:xxgeminixx+neverretype@gmail.com">Email support</a>
+      </nav>
+    </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
